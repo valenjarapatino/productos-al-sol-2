@@ -1,0 +1,66 @@
+
+
+
+/* barra de navegacion diseño*/
+.barra-de-navegacion{
+    color: black;
+    display: inline-block;
+    text-decoration: none;
+    
+}
+.barra-de-navegacion:hover{
+    background-color:antiquewhite ;
+}
+nav{
+    background:#F2E205;
+    padding: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+   
+
+    /*carrucel*/
+
+
+   .carrucel{
+      width: 100%;
+      height: 600px;
+      overflow: hidden;
+      align-content: center;
+      display: grid;
+      margin-left: auto;
+      margin-right: auto;
+    
+    }
+    .carrucel ul{
+        display: flex;
+        animation: cambio 15s infinite alternate linear;
+        width: 400%;
+    }
+    .carrucel li{
+        width: 100%;
+        list-style: none;
+    }
+    .carrucel img{
+        width: 80%;
+        height: 80%;
+    }
+
+    @keyframes cambio{
+        0%{margin-left: 0;}
+        20%{margin-left: 0;}
+        
+        25%{margin-left: -100%;}
+        45%{margin-left: -100%;}
+        
+        50%{margin-left: -200%;}
+        70%{margin-left: -200%;}
+        
+        75%{margin-left: -300%;}
+        100%{margin-left: -300%;}
+    }
+    @media only screen and (min-width:320px) and (max-width:768px){
+    .carrucel, .carrucel ul, .carrucel img{
+        height: 100vh;
+    }
+    }
